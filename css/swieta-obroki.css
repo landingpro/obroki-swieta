@@ -547,6 +547,7 @@ blockquote {
 .body-text.s.below-feature {
   text-align: justify;
   max-width: 70%;
+  margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 40px;
@@ -7075,7 +7076,14 @@ blockquote {
   display: flex;
 }
 
-.image-4, .image-5 {
+.image-4 {
+  display: block;
+  position: absolute;
+  inset: 2% auto auto -7%;
+  transform: rotate(-20deg);
+}
+
+.image-5 {
   display: block;
   position: absolute;
   inset: -5% auto auto -7%;
@@ -7085,7 +7093,7 @@ blockquote {
 .image-6 {
   display: block;
   position: absolute;
-  inset: 3% auto auto -7%;
+  inset: -4% auto auto -7%;
   transform: rotate(-20deg);
 }
 
@@ -7206,6 +7214,18 @@ blockquote {
 
 .image-11, .image-12, .image-13 {
   display: none;
+}
+
+.feature-section-copy {
+  background-color: var(--transparent);
+  max-width: 1440px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-section-copy.last {
+  margin-bottom: 10rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -8743,8 +8763,12 @@ blockquote {
     padding: 24px;
   }
 
-  .image-4, .image-5 {
-    top: -7%;
+  .image-4 {
+    top: 2%;
+  }
+
+  .image-5 {
+    top: -2%;
   }
 
   .l-g-2-col-2-rows {
@@ -8774,6 +8798,10 @@ blockquote {
   .image-11, .image-12, .image-13 {
     margin-bottom: 2rem;
     display: block;
+  }
+
+  .feature-section-copy.last {
+    margin-bottom: 2rem;
   }
 }
 
@@ -8887,6 +8915,14 @@ blockquote {
 
   .cta-wrapper {
     width: 100%;
+  }
+
+  .tagline.c-b-neutral-30.c-t-neutral-100.in-feature {
+    text-align: center;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
   .tagline.hero {
@@ -9904,8 +9940,12 @@ blockquote {
     border-radius: 0;
   }
 
-  .image-4, .image-5 {
-    top: -4%;
+  .image-4 {
+    top: 2%;
+  }
+
+  .image-5, .image-6 {
+    top: -3%;
   }
 
   .l-g-2-col-2-rows {
@@ -10028,6 +10068,7 @@ blockquote {
   }
 
   .body-text.s.below-feature {
+    max-width: 100%;
     margin-top: 1rem;
     font-size: .8rem;
   }
@@ -10069,7 +10110,7 @@ blockquote {
     padding-left: 0;
   }
 
-  .wrapper-m.locations-mobile {
+  .wrapper-m.locations-mobile, .wrapper-m.feature-block {
     padding-top: 40px;
   }
 
@@ -10159,6 +10200,7 @@ blockquote {
 
   .tagline.c-b-neutral-30.c-t-neutral-100.in-feature {
     text-align: center;
+    max-width: none;
     padding-top: 3px;
     padding-bottom: 3px;
     display: block;
@@ -11420,16 +11462,17 @@ blockquote {
     max-width: none;
     height: 9rem;
     top: -1%;
+    left: -10%;
   }
 
   .image-5 {
     height: 9rem;
-    top: -1%;
+    top: -4%;
   }
 
   .image-6 {
     height: 9rem;
-    top: 5%;
+    top: -2%;
   }
 
   .l-g-2-col-2-rows {
@@ -11488,6 +11531,10 @@ blockquote {
   .bold-text-15 {
     text-align: left;
     font-size: 1.1rem;
+  }
+
+  .feature-section-copy {
+    margin-bottom: 1rem;
   }
 }
 
