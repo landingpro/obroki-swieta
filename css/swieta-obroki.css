@@ -11448,6 +11448,7 @@ blockquote {
 
   .image-7 {
     z-index: 100;
+    display: none;
     bottom: -4%;
   }
 
