@@ -603,6 +603,7 @@ blockquote {
 }
 
 .wrapper-m.hero-main {
+  z-index: 1;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   background-image: url('../images/obroki-christmas-hero.webp');
@@ -620,6 +621,7 @@ blockquote {
   padding-bottom: 24px;
   padding-left: 24px;
   display: grid;
+  position: relative;
 }
 
 .wrapper-m.feature-block {
@@ -1644,6 +1646,10 @@ blockquote {
   border-top-color: var(--neutral--90);
   background-color: var(--neutral--100);
   color: var(--neutral--10);
+}
+
+.footer.christmas {
+  position: relative;
 }
 
 .material-icons.icon-right {
@@ -6908,7 +6914,8 @@ blockquote {
 }
 
 .code-embed-2 {
-  position: absolute;
+  position: static;
+  inset: 0%;
 }
 
 .bold-text-13 {
@@ -7493,9 +7500,16 @@ blockquote {
     margin-right: 0;
   }
 
-  .footer-grid-2, .footer-grid-3 {
+  .footer-grid-2 {
     text-align: center;
     grid-template-columns: 1fr;
+  }
+
+  .footer-grid-3 {
+    z-index: 1;
+    text-align: center;
+    grid-template-columns: 1fr;
+    position: relative;
   }
 
   .footer-top-2, .footer-bottom-2 {
